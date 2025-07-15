@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: rgb(148, 167, 159);
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+#titulo {
+  border-radius: 5px;
+  background-color: #bed5a6;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 650px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  flex: 1;
+  padding: 2rem;
+}
+
+.bi {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.box {
+  text-align: center;
+}
+
+h1 {
+  padding-top: 15px;
+  color: chocolate;
+}
+
+button {
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: rgb(227, 229, 213);
+  padding: 0.31rem 0;
+  width: 100%;
+}
+
+footer .redes {
+  display: inline-block;
+  text-decoration: none;
+  width: 200px;
+  height: 15px;
+  padding: 15px 0 0 0;
+  line-height: 30px;
+  margin: 10px 0 30px 50px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+footer .redes a {
+  color: #081c6c;
+  padding: 5px;
+}
+
+footer .redes a:hover {
+  color: #c8690ada;
+}
+
+footer .info {
+  color: #000;
+  float: right;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+footer .info ul {
+  margin-top: 8px;
+}
+
+footer .info ul li {
+  list-style: none;
+  padding: 2px;
+}
+footer .info i {
+  text-decoration: none;
+  color: #081c6c;
+}
+
+footer .info a {
+  text-decoration: none;
+  color: #000;
+}
+footer .info a:hover {
+  color: #c8690ada;
+}
