@@ -12,6 +12,7 @@ function generatePassword() {
   // Define password lenth
   const lengtPw = generateLengt(8, 16);
   var passwordGenerated = "";
+  var verificateNumber = /(\d+)/g;
 
   //Asign first element with Uppercase character
   const beginElement = Math.floor(Math.random() * characters[0].length);
@@ -24,8 +25,17 @@ function generatePassword() {
     let secondIndex = Math.floor(Math.random() * characters[firstIndex].length);
     passwordGenerated += characters[firstIndex][secondIndex];
   }
-  //show password
-  r.innerText = passwordGenerated;
+
+  //If password has not include number or special character try agin
+  if (
+    !passwordGenerated.match(verificateNumber) ||
+    !passwordGenerated.match(/[^a-zA-Z0-9\s]/)
+  ) {
+    generatePassword();
+  } else {
+    //show password
+    r.innerText = passwordGenerated;
+  }
 }
 
 //Generate password lengt aleatory between min and max
